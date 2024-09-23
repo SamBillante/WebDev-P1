@@ -1,0 +1,137 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+#scroll-container {
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+    width: 700px;
+}
+
+#scroll-text {
+    text-align: right;
+    color: black;
+    font-size: 18px;
+    /* animation properties */
+    -moz-transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+    -moz-animation: scroll-anilation 15s linear infinite;
+    -webkit-animation: scroll-anilation 15s linear infinite;
+    animation: scroll-anilation 15s linear infinite;
+}
+
+/* for Firefox */
+@-moz-keyframes scroll-anilation {
+    from {
+        -moz-transform: translateX(-100%);
+    }
+
+    to {
+        -moz-transform: translateX(100%);
+    }
+}
+
+/* for Chrome */
+@-webkit-keyframes scroll-anilation {
+    from {
+        -webkit-transform: translateX(-100%);
+    }
+
+    to {
+        -webkit-transform: translateX(100%);
+    }
+}
+
+@keyframes scroll-anilation {
+    from {
+        -moz-transform: translateX(-100%);
+        -webkit-transform: translateX(-100%);
+        transform: translateX(-100%);
+    }
+
+    to {
+        -moz-transform: translateX(100%);
+        -webkit-transform: translateX(100%);
+        transform: translateX(100%);
+    }
+}
+
+.bebopFont {
+    font-family: 'Special Elite';
+}
+
+.spaced {
+    margin-top: 1em;
+}
+
+.roundedCorners {
+    border-radius: 10%;
+}
+
+.centered {
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    color: white;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    text-align: center;
+}
+
+.skyBackground {
+    background-color: #258;
+}
+
+.lightBlueBackground {
+    background-color: #dbedff;
+}
+
+.blueBackground {
+    background-color: #accbff;
+}
+
+.darkBlueBackground { /*dark blue has been deprecated as a color*/
+    background-color: #8993ff;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(5, 19%);
+    grid-template-rows: repeat(4, 23%);
+    height: 400px;
+    width: 500px;
+    max-height: 400px;
+    max-width: 500px;
+    gap: 2%;
+    background-color: black;
+}
+
+    .wrapper > div {
+        padding: 1em;
+    }
